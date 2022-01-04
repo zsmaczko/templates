@@ -3,12 +3,17 @@ date_added: 2020-01-03
 title: KS-621
 link: https://www.aliexpress.com/item/33030109775.html
 image: /assets/images/KS-621.jpg
-template: '{"NAME":"KS-621","GPIO":[17,0,0,0,133,132,0,0,130,52,0,21,91],"FLAG":15,"BASE":18}' 
+old template: '{"NAME":"KS-621","GPIO":[17,0,0,0,133,132,0,0,130,52,0,21,91],"FLAG":15,"BASE":18}' 
+template (new format): {"NAME":"KS-621","GPIO":[32,0,0,0,2688,2656,0,0,2592,288,225,224,65,0],"FLAG":0,"BASE":18}
 link2: https://www.aliexpress.com/item/33030109775.html
 mlink: https://www.hidintech.com/eu-smart-wall-socket-p00093p1.html
 flash: tuya-convert
 category: plug
 type: Wall Outlet
 standard: eu
+
+Useful rules:
+{"Rule1":{"State":"ON","Once":"OFF","StopOnError":"OFF","Length":39,"Free":472,"Rules":"on power1#state do power2 %value% endon"}}
+{"Rule2":{"State":"ON","Once":"OFF","StopOnError":"OFF","Length":39,"Free":472,"Rules":"on power2#state do power1 %value% endon"}}
 ---
 ![](https://ae01.alicdn.com/kf/HTB1Hev3e2WG3KVjSZFgq6zTspXaF/Tuya-Wifi-Smart-Wall-Socket-Plug-16A-EU-Energy-Monitor-WiFi-Socket-Smart-Life-App-Control.jpg)
